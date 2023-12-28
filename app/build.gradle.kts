@@ -59,6 +59,7 @@ dependencies {
     val materialVersion = "1.1.2"
     val uiComposeVersion = "1.5.4"
     val coilVersion = "2.5.0"
+    val roomVersion = "2.6.1"
 
     implementation("androidx.navigation:navigation-compose:$navVersion")
     implementation("androidx.compose.material3:material3:$materialVersion")
@@ -72,6 +73,8 @@ dependencies {
     implementation("io.coil-kt:coil-compose:$coilVersion")
     implementation("io.coil-kt:coil-svg:$coilVersion")
 
+    implementation("androidx.room:room-runtime:$roomVersion")
+    annotationProcessor("androidx.room:room-compiler:$roomVersion")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
