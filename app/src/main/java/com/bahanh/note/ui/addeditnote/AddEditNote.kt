@@ -14,6 +14,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
+import com.bahanh.note.data.Note
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -24,7 +25,7 @@ fun AddEditNoteScreen(note: Note?, onSaveNote: (Note) -> Unit, navController: Na
                 Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "Back")
             }
         }, actions = {
-            IconButton(onClick = { onSaveNote(Note()) }) {
+            IconButton(onClick = { /*TODO*/ }) {
                 Icon(imageVector = Icons.Default.Edit, contentDescription = "Edit Note")
             }
         })

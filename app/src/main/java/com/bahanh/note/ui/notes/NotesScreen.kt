@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Info
@@ -38,10 +39,12 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.bahanh.note.R
+import com.bahanh.note.data.Note
 import com.bahanh.note.ui.theme.NoteTheme
 import com.bahanh.note.util.LoadingContent
 import kotlin.random.Random
 
+@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun NotesScreen(
@@ -67,21 +70,22 @@ fun NotesScreen(
         FloatingActionButton(onClick = { onAddNote() }) {
             Icon(imageVector = Icons.Default.Add, contentDescription = "Add new note")
         }
-    }) { paddingValues ->
-        Box(modifier = Modifier.padding(paddingValues)) {
+    }) {
+        Box(modifier = Modifier.padding(20.dp), contentAlignment = Alignment.Center) {
             NotesContent(
-                loading = false, notes = listOf<Note>(
-                    Note(),
-                    Note(),
-                    Note(),
-                    Note(),
-                    Note(),
-                    Note(),
-                    Note(),
-                    Note(),
+                loading = false, notes = listOf(
+                    Note("1", "Note 1", "Content 1"),
+                    Note("2", "Note 2", "Content 2"),
+                    Note("3", "Note 3", "Content 3"),
+                    Note("4", "Note 4", "Content 4"),
+                    Note("5", "Note 5", "Content 5"),
+                    Note("6", "Note 6", "Content 6"),
+                    Note("7", "Note 7", "Content 7"),
+                    Note("8", "Note 8", "Content 8"),
                 ), onNoteClick, onNoteLongClick
             )
         }
+
     }
 }
 

@@ -16,8 +16,14 @@ abstract class NotesDatabase : RoomDatabase() {
         fun getDatabase(context: Context): NotesDatabase {
             return Instance ?: synchronized(this) {
                 Room.databaseBuilder(context, NotesDatabase::class.java, "note_database")
+                    .fallbackToDestructiveMigration()
                     .build().also { Instance = it }
             }
+        }
+
+        fun closeDatabase() {
+            Instance?.close()
+            Instance = null
         }
     }
 }

@@ -11,8 +11,6 @@ i
 9app/src/main/java/com/bahanh/note/data/NotesRepository.kt,c/4/c450ae95138655cb68d53b25cda37755ce435240
 a
 1app/src/main/java/com/bahanh/note/data/NoteDao.kt,2/2/2205882d9856b5f1b73bc75cd814be5fca0f7563
-p
-@app/src/main/java/com/bahanh/note/data/OfflineNotesRepository.kt,c/7/c726a3e78aa6835f99d53caaf920b670d6b15747
 o
 ?app/src/main/java/com/bahanh/note/ui/note/NoteEntryViewModel.kt,9/2/9201fd269da7fb5c37a3394b4842fda5c9f29cc8
 \
@@ -23,7 +21,13 @@ r
 Bapp/src/main/java/com/bahanh/note/ui/navigation/NoteDestination.kt,3/d/3d9765d4dd44c0d14a3c7f28b66b4ac3ff2bec24
 d
 4app/src/main/java/com/bahanh/note/NoteApplication.kt,c/6/c6bcd3856158bd7bbf837758a0925dfd22c8b963
-f
-6app/src/main/java/com/bahanh/note/data/AppContainer.kt,6/b/6be86358b6a3f26ae76bc06fc1156430040c5915
 g
 7app/src/main/java/com/bahanh/note/data/NotesDatabase.kt,f/0/f03fe9b8fccbe4c1e1a8c45695de7406fbbac89d
+o
+?app/src/main/java/com/bahanh/note/ui/addeditnote/AddEditNote.kt,c/7/c7903965c88dc6e07334ec5c21a845d21078acb7
+i
+9app/src/main/java/com/bahanh/note/ui/notes/NotesScreen.kt,a/1/a178576154f30dfac11c9fb9a0257b43ccbf516b
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+l
+<app/src/main/java/com/bahanh/note/ui/notes/NotesViewModel.kt,f/b/fbabfd44026e9b0f3a3020b41c89312109c3c8b1

@@ -19,7 +19,7 @@ fun NoteNavGraph(navController: NavHostController, modifier: Modifier = Modifier
                 onSearchClick = { /*TODO*/ },
                 onInformationClick = { /*TODO*/ },
                 onNoteClick = {
-                    navController.navigate(Screens.ADD_EDIT_NOTE_SCREEN)
+                    navController.navigate(Screens.NOTE_SCREEN)
                 },
                 onNoteLongClick = {},
             )
